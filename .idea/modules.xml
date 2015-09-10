@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CodeSet.iml" filepath="$PROJECT_DIR$/CodeSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeset-config/codeset-config.iml" filepath="$PROJECT_DIR$/codeset-config/codeset-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeset-util/codeset-util.iml" filepath="$PROJECT_DIR$/codeset-util/codeset-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeset-web/codeset-web.iml" filepath="$PROJECT_DIR$/codeset-web/codeset-web.iml" />
+    </modules>
+  </component>
+</project>
