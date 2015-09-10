@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="codeset-web:war">
+    <output-path>$PROJECT_DIR$/codeset-web/target</output-path>
+    <root id="archive" name="codeset-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="codeset-web:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -2,12 +2,12 @@
  * $Id: JsonExceptionResolver.java 5075 2012-10-18 07:11:36Z you.zhou $ Copyright (c) 2012 Qunar.com. All Rights
  * Reserved.
  */
-package com.channelsoft.codeset.util.json;
+package com.channelsoft.codeset.json;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.channelsoft.codeset.util.adapter.JsonAndViewMethodReturnValueHandler;
+import com.channelsoft.codeset.adapter.JsonAndViewMethodReturnValueHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;

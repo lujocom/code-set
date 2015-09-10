@@ -22,10 +22,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="codeset-config" />
+        <module name="codeset-util" />
+        <module name="codeset-web" />
         <module name="moduledemo-config" />
         <module name="moduledemo-util" />
         <module name="moduledemo-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CodeSet" target="1.6" />
+      <module name="codeset-config" target="1.6" />
+      <module name="codeset-util" target="1.6" />
+      <module name="codeset-web" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

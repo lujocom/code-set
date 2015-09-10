@@ -1,4 +1,4 @@
-package com.channelsoft.codeset.util.json;
+package com.channelsoft.codeset.json;
 /*
  * $Id: JsonAndView.java 5075 2012-10-18 07:11:36Z you.zhou $ Copyright (c) 2012 Qunar.com. All Rights Reserved.
  */

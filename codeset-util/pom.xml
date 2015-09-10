@@ -3,27 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>moduleDemo</artifactId>
-        <groupId>com.channelsoft.study.moduleDemo</groupId>
+        <artifactId>CodeSet</artifactId>
+        <groupId>com.channelsoft.study.codeset</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>moduledemo-util</artifactId>
+    <artifactId>codeset-util</artifactId>
     <dependencies>
 
         <dependency>
-            <groupId>com.channelsoft.study.moduleDemo</groupId>
-            <artifactId>moduledemo-config</artifactId>
+            <groupId>com.channelsoft.study.codeset</groupId>
+            <artifactId>codeset-config</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!--定时任务工具 quartz-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>1.8.4</version>
-        </dependency>
+        </dependency>-->
 
         <!-- dom解析 -->
         <dependency>
@@ -94,6 +94,22 @@
             <version>2.4</version>
             <classifier>jdk15</classifier>
         </dependency>
+
+        <!-- http请求包 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.5</version>
+        </dependency>
+
+
+
     </dependencies>
 
 </project>

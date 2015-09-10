@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd
         http://www.w3.org/2001/XMLSchema-instance ">
     <parent>
-        <artifactId>moduleDemo</artifactId>
-        <groupId>com.channelsoft.study.moduleDemo</groupId>
+        <artifactId>CodeSet</artifactId>
+        <groupId>com.channelsoft.study.codeset</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>moduledemo-config</artifactId>
+    <artifactId>codeset-config</artifactId>
 
     <dependencies>
-        <!--spring security-->
 
+        <!--spring security-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
-            <version>3.2.5.RELEASE</version>
+            <version>4.0.2.RELEASE</version>
         </dependency>
 
 
@@ -27,27 +27,27 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <scope>test</scope>
-            <version>3.1.4.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>3.1.4.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>3.1.4.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>3.1.4.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>3.1.4.RELEASE</version>
+            <version>4.1.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>

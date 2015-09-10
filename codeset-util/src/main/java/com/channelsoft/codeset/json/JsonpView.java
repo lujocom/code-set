@@ -1,9 +1,9 @@
 /**
  * $Id: JsonpView.java 3972 2012-09-11 02:40:46Z you.zhou $ Copyright (c) 2012 Qunar.com. All Rights Reserved.
  */
-package com.channelsoft.codeset.util.json;
+package com.channelsoft.codeset.json;
 
-import com.channelsoft.codeset.util.adapter.JsonAndViewMethodReturnValueHandler;
+import com.channelsoft.codeset.adapter.JsonAndViewMethodReturnValueHandler;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.servlet.view.json.MappingJacksonJsonView;

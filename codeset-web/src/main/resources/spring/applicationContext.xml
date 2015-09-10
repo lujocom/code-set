@@ -16,7 +16,7 @@
         <property name="customReturnValueHandlers">
             <list>
                 <bean
-                        class="com.channelsoft.codeset.util.adapter.JsonAndViewMethodReturnValueHandler" />
+                        class="com.channelsoft.codeset.adapter.JsonAndViewMethodReturnValueHandler" />
             </list>
         </property>
 
@@ -51,7 +51,7 @@
 		</property>
 	</bean>
     <!-- 异常处理器 -->
-    <bean id="jsonExceptionResolver" class="com.channelsoft.codeset.util.json.JsonExceptionResolver">
+    <bean id="jsonExceptionResolver" class="com.channelsoft.codeset.json.JsonExceptionResolver">
         <property name="order" value="0" />
     </bean>
     <!-- 配置view视图处理器 -->
@@ -59,7 +59,7 @@
           class="org.springframework.web.servlet.view.BeanNameViewResolver">
         <property name="order" value="0" />
     </bean>
-    <bean id="jsonView" class="com.channelsoft.codeset.util.json.JsonpView">
+    <bean id="jsonView" class="com.channelsoft.codeset.json.JsonpView">
         <property name="encoding">
             <value type="org.codehaus.jackson.JsonEncoding">UTF8</value>
         </property>

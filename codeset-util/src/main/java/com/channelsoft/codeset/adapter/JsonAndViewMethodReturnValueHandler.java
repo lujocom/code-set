@@ -2,9 +2,9 @@
  * $Id: JsonAndViewMethodReturnValueHandler.java 3972 2012-09-11 02:40:46Z you.zhou $ Copyright (c) 2012 Qunar.com. All
  * Rights Reserved.
  */
-package com.channelsoft.codeset.util.adapter;
+package com.channelsoft.codeset.adapter;
 
-import com.channelsoft.codeset.util.json.JsonAndView;
+import com.channelsoft.codeset.json.JsonAndView;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
