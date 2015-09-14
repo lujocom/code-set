@@ -6,13 +6,13 @@ package com.channelsoft.codeset.json;
 import com.channelsoft.codeset.adapter.JsonAndViewMethodReturnValueHandler;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.web.servlet.view.json.MappingJacksonJsonView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
-public class JsonpView extends MappingJacksonJsonView implements InitializingBean {
+public class JsonpView extends MappingJackson2JsonView implements InitializingBean {
 
     private final static String DEFAULT_CALLBACK_PARAM = "callback";
 

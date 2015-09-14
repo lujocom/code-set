@@ -31,12 +31,6 @@
             <artifactId>jsoup</artifactId>
             <version>1.7.3</version>
         </dependency>
-        <!-- DBCP数据源配置 -->
-        <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <version>1.4</version>
-        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
@@ -107,8 +101,6 @@
             <artifactId>httpmime</artifactId>
             <version>4.5</version>
         </dependency>
-
-
 
     </dependencies>
 

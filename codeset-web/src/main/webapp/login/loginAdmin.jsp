@@ -5,5 +5,6 @@
 </head>
 <body>
     hello world
+<script
 </body>
 </html>

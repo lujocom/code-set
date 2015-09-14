@@ -26,7 +26,7 @@
                 <bean
                         class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
                 <bean id="jsonHttpMessageConverter"
-                      class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+                      class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
                     <property name="supportedMediaTypes">
                         <list>
                             <value>text/plain;charset=UTF-8</value>
@@ -40,10 +40,10 @@
     
     <!-- 前后台json数据传输配置（处理json数据转换），不配报406错误 -->
 	<bean id="mappingJacksonHttpMessageConverter"
-		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
 	</bean>
 	<bean
-		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
 		<property name="messageConverters">
 			<util:list id="beanList">
 				<ref bean="mappingJacksonHttpMessageConverter" />
@@ -61,7 +61,7 @@
     </bean>
     <bean id="jsonView" class="com.channelsoft.codeset.json.JsonpView">
         <property name="encoding">
-            <value type="org.codehaus.jackson.JsonEncoding">UTF8</value>
+            <value type="com.fasterxml.jackson.core.JsonEncoding">UTF8</value>
         </property>
         <property name="contentType" value="application/json;charset=UTF-8" />
         <property name="extractValueFromSingleKeyModel" value="true" />
@@ -69,9 +69,9 @@
         <property name="objectMapper" ref="objectMapper" />
     </bean>
 
-    <bean id="objectMapper" class="org.codehaus.jackson.map.ObjectMapper">
+    <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">
         <property name="serializationInclusion">
-            <value type="org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion">
+            <value type="com.fasterxml.jackson.annotation.JsonInclude$Include">
                 NON_NULL
             </value>
         </property>
